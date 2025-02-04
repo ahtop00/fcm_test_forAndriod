@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">fcm_test_andriod</string>
+    <string name="get_fcm_token">Get FCM Token</string>
+</resources>
