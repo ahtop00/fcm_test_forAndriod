@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -50,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // ✅ 화면이 잠겨 있어도 보이도록 설정
+        getWindow().addFlags(
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
+                        WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
+                        WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON |
+                        WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+        );
 
         // Android 알림 권한 요청
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
