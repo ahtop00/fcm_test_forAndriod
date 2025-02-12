@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- 제목 표시 -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <!-- 메시지 본문 -->
+    <TextView
+        android:id="@+id/bodyTextView"
+        android:layout_width="189dp"
+        android:layout_height="69dp"
+        android:paddingBottom="8dp"
+        android:text="메시지 내용"
+        android:textSize="16sp" />
+
+    <!-- 발신자 -->
+    <TextView
+        android:id="@+id/senderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보낸 사람"
+        android:textSize="14sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- 예약된 날짜 -->
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예약 날짜"
+        android:textSize="14sp"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>
